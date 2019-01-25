@@ -34,5 +34,9 @@ def create_app(test_config=None):
     from . import db
     db.init_app(app)
 
+    # 注册蓝图
+    from . import auth
+    app.register_blueprint(auth.bp)
+
     return app
         
