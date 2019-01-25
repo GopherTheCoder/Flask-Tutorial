@@ -1,3 +1,5 @@
+# 应用工厂
+
 import os
 
 from flask import Flask
@@ -24,9 +26,13 @@ def create_app(test_config=None):
         pass
 
     # 页面
-    @app.route('/initiates') # 路由
-    def hello():
-        return 'Welcome to ANIMUS'
+    # @app.route('/initiates') # 路由
+    # def hello():
+        # return 'Welcome to ANIMUS'
+
+    # 注册数据库函数
+    from . import db
+    db.init_app(app)
 
     return app
         
