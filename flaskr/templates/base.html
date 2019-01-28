@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<title>
+    {% block title %}
+
+    {% endblock title %}
+</title>
+<link rev="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<nav>
+    <h1>哦豁</h1>
+    <ul>
+        {% if g.user %}
+            <li><span>{{ g.user['username'] }}</span></li>
+            <li><a href="{{ url_for('auth.logout') }}">退出登录</a></li>
+        {% else %}
+            <li><a href="{{ url_for('auth.register') }}">注册</a></li>
+            <li><a href="{{ url_for('auth.login') }}">登录</a></li>
+        {% endif %}
+    </ul>
+</nav>
+
+<section class="content">
+    <header>
+        {% block header %}
+        
+        {% endblock header %}
+    </header>
+
+    {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+    {% endfor %}
+
+    {% block content %}
+    
+    {% endblock content %}
+</section>

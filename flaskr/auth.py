@@ -37,7 +37,7 @@ def register():
 
         flash(error)
 
-        return render_template('auth/register.html')
+    return render_template('auth/register.html')
 
 # 视图：登录
 @bp.route('/login', methods=('GET', 'POST'))
@@ -74,7 +74,7 @@ def login():
 # 已登录用户信息
 @bp.before_app_request # 在视图执行前执行，无论URL为何
 def load_logged_in_user():
-    user_id = session['user_id']
+    user_id = session.get('user_id')
 
     if user_id is None:
         g.user = None
