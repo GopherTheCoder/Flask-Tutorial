@@ -20,7 +20,7 @@ def register():
         if not username:
             error = '请输入用户名\n'
         if not password:
-            error += '请输入密码\n'
+            error = '请输入密码\n'
         if error is None:
             if db.execute(
                 'SELECT id FROM user WHERE username = ?', (username,)
@@ -52,11 +52,11 @@ def login():
         if not username:
             error = '请输入用户名\n'
         if not password:
-            error += '请输入密码\n'
+            error = '请输入密码\n'
 
         if error is None:
             user = db.execute(
-                'SELECT password FROM user WHERE username = ?', (username,)
+                'SELECT * FROM user WHERE username = ?', (username,)
             ).fetchone()
             if not check_password_hash(user['password'], password):
                 error = '密码错误'
