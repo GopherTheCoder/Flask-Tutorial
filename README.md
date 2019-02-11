@@ -1,8 +1,8 @@
 # Flask-Tutorial
 Following [Flask official tutorial](https://dormousehole.readthedocs.io/en/latest/tutorial/index.html)
 ***
-第二次正经的Python实战尝试
-要在寒假里搞好！
+第二次正经的Python实战尝试  
+要在寒假里搞好！  
 
 **纳溪记得监督我啊！**
 ***
@@ -15,3 +15,8 @@ Following [Flask official tutorial](https://dormousehole.readthedocs.io/en/lates
 2. *部署至网络服务器上线运行→1.0.0*
 3. *纳溪把他变得好看了→2.0.0*
 ***
+## 写给纳溪的
+Read [THIS](https://dormousehole.readthedocs.io/en/latest/tutorial/tests.html)  
+有任何问题来问我就好啦！  
+***
+此README文档仍在完善中。。。
