@@ -1,0 +1,4 @@
+include Gopher_blog/schema.sql
+graft Gopher_blog/static
+graft Gopher_blog/templates
+global-exclude *.pyc
