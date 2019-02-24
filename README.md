@@ -3,10 +3,7 @@ Following [Flask official tutorial](https://dormousehole.readthedocs.io/en/lates
 Python 版本：[3.7.2](https://www.python.org/ftp/python/3.7.2/python-3.7.2.exe)  
 开发环境：[VS Code](https://code.visualstudio.com/)  
 ***
-第二次正经的Python实战尝试  
-要在寒假里搞好！  
-
-**纳溪记得监督我啊！**
+[Trello](https://trello.com/b/AEi6PjIX)（施工中）
 ***
 ## 版本号控制策略
 ### 通用策略
